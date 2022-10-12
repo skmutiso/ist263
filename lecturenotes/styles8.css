@@ -1,0 +1,21 @@
+P {
+    border: 2px solid #ff0000;
+    padding: 10px;
+    margin: 20px;
+    background-color:#ffae00;
+}
+/*changes color of visited link */
+a:visited {
+    color: #b042f5;
+}
+
+a:hover{
+    color: #ffae00
+}
+
+body {
+    background-image: url("../lab03/images/otto.png");
+    background-repeat: repeat;
+    background-color: #fff4d6;
+    background-color: #048704;
+}
