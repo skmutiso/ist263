@@ -1,0 +1,46 @@
+a:hover{
+    color:firebrick;
+}
+
+a:visited {
+    color: #999;
+}
+
+body {
+    background-color: aliceblue;
+
+
+}
+
+p{
+   background-color: blanchedalmond; 
+   padding: 10px;
+   margin: 20px;
+
+
+}
+
+h1{
+    color:blue;
+}
+
+h2{
+    color:aquamarine
+}
+
+nav{
+    color:blueviolet;
+
+}
+
+nav a:hover {
+    background-color: azure;
+}
+
+nav{
+    padding:10px
+}
+
+nav{
+    margin-bottom: 30px;
+}
