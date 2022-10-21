@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <title>Samuel's Biography page</title>
     <link rel="stylesheet" href="styles07.css">
+    <style>
+        img {float: left; margin: 20px;}
+        .name {float: left;}
+        .stopfloat{clear: both;}
+    </style>
 </head>
 <body>
     <nav>
@@ -11,10 +16,11 @@
         <a href="skills.page.html">Skills</a>
         <a href="contact.html">Contact</a>
     </nav>
+    <header>
         <h1>Samuel Mutiso's Biography</h1>
-        <header><img src="../lab03/images/me.jpg" alt="my photo"></header>
-        <img src="me.jpg" alt="me" width="150" height="150">
-        <main>
+        <img src="../lab03/images/me.jpg" class="myphoto" alt="my photo">
+    </header>    
+    <main>
         <p>
             <strong>Hi, My name is Samuel Mutiso and I am 20 years old. currently majoring in information management & Technology at Syracuse university.</strong> 
 
@@ -23,7 +29,14 @@
     </main>
         <h2>Personal Information</h2>
         <p>Outside of academics I am an athlete at Syracuse university who runs track and field. Im interested in fashion, I like to watch TV shows like Power and Snowfall and I grew up in Boston, Mass. I also like to spend time with family and friends and doing spontanious things like going on trips or visiting random places i have never been before.</p>
-    <hr>
+
+        <div class="stopfloat"></div>
 </body>
+<footer>
+    <hr>
+    <p class="name">Samuel Mutiso 2022</p>
+    <p class="quote">"Sam was here, est 2022"</p>
+    <div class="clear"></div>
+</footer>
 </html>
 
