@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .welcome {
+            display:flex;
+            justify-content: center;
+        }
+        .skip {
+            background-color: #ffa500;
+            padding: 5px;
+            border: 1px solid black;
+            position:absolute;
+            top: 30px;
+            left: -999px;
+        }
+        /* focus is a psuedo class that means the element has been tabbed to */
+        .skip:focus {
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#content" class="skip" tabindex="1">Skip to Content</a><br>
+    <a href="https://www.syr.edu"tabindex="3">Syracuse U</a><br>
+    <a href="https://www.google.com"tabindex="2">Google</a><br>
+    <a href="https://www.amazon.com"tabindex="1">Amazon</a>
+    <div class="welcome">Hello World</div>
+    <p id="content">kfbhdkfbs,fhsflgbfglbglsdgslgilgugsfbsdgfbsdgfdfhbtwghggdfbsgbwtrgrtgkiyghslgiufhglsfghlfsghslfgihglighrtugtlgshdbgfbughldfgbdflsubgsgubrlgirbjglskurlgsr</p>
+</body>
+</html>
