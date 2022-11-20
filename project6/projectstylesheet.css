@@ -1,5 +1,5 @@
 @media only screen and (max-width: 600px) {
-    img, nav, nav a {max-width: 100%; display: block; margin: 5px;}
+    nav, nav a {max-width: 100%; display: block; margin: 5px;}
     span {display: none;}
 }
 
