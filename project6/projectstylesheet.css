@@ -7,13 +7,21 @@ body {
     background-color: grey;
 }
 
+
 nav {
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 25px;
-    margin-right: 50px;
+    margin: 30px;
+    margin: 30px;
+    background-color: whitesmoke;
 }
+
+h1,footer {
+    font-family: 'Brush Script MT', 'Times New Roman', Times, serif;
+  }
+
+
 
  .img {
     height: auto;
@@ -45,7 +53,7 @@ nav a:visited {
     color: black;
 }
 
-h2 {
+h2{
 text-align: center;
 margin: 30px;
 }
