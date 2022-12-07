@@ -16,6 +16,17 @@ nav{
     margin: 30px;
 }
 
+#skip {
+    position: absolute;
+    left: -999px;
+    background-color: white;
+    padding: 5px;
+}
+
+#skip:focus {
+    left: 10px;
+}
+
 h1,footer {
     font-family: 'Brush Script MT', 'Times New Roman', Times, serif;
   }
