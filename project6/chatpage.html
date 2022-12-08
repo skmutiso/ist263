@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="projectstylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
     <title>chat</title>
 </head>
 <body>
 <h1>Sammy's Sneaks</h1>
 <nav>
+   <a href="#content" id="skip">Skip to Content</a>
    <a href="homepage.html">home</a>
    <a href="shoppage.html">shop</a>
    <a href="chatpage.html">chat</a>
@@ -17,9 +21,14 @@
    <a href="account.html">account</a>
    <a href="settings.html">settings</a>
 
-   </select><input type="search">
-</nav>
+   <form>
+       <label for="search">Search</label>
+       <input type="search" name="search" id="search">
 
+   </form>
+
+</nav>
+<main id="content">
 <h3>Sneaker of the Day</h3>
  <img class="img" src="images/offwhitexnikedunkpinegreen.jpg" viewBox="0 0 384 512" width="600" height="450"></viewBox>
 
@@ -43,5 +52,6 @@
     <p class="quote">"Sam was here, est 2022"</p>
     <div class="clear"></div>
 </footer>
+</main>
  </body>
 </html>

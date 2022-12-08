@@ -3,6 +3,7 @@
     span {display: none;}
 }
 
+
 body {
     background-color: grey;
 }
@@ -12,6 +13,7 @@ nav{
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    font-family: 'Playfair Display', serif;
     margin: 30px;
     margin: 30px;
 }
@@ -27,9 +29,45 @@ nav{
     left: 10px;
 }
 
+
+.photogrid {
+    display:flex;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.photogrid img {
+    width: 100%;
+    height: auto;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.photogrid {
+padding: 20px;
+}
+
+
+.one {
+    padding-right: 50px;
+}
+
+.two {
+    padding-bottom: 50px;
+}
+
+.shoe4 {
+    padding-top: 20px;
+}
+
+.shoe3 {
+    padding-top: 20px;
+}
+
 h1,footer {
     font-family: 'Brush Script MT', 'Times New Roman', Times, serif;
   }
+
 
  .img {
     height:auto;
@@ -46,6 +84,10 @@ h1,footer {
  
  h1, h2, footer {
     color: black;
+ }
+
+ h2 {
+    font-family: 'Playfair Display', serif;
  }
 
  nav a:link {
