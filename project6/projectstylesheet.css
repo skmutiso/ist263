@@ -45,6 +45,7 @@ nav{
 
 .photogrid {
 padding: 20px;
+
 }
 
 
@@ -56,13 +57,28 @@ padding: 20px;
     padding-bottom: 50px;
 }
 
-.shoe4 {
-    padding-top: 20px;
+.three {
+    padding-bottom: 50px;
 }
 
-.shoe3 {
-    padding-top: 20px;
+.four {
+    padding-bottom: 50px;
 }
+
+.five {
+    padding-bottom: 50px;
+}
+
+.six {
+    padding-bottom: 50px;
+}
+.seven {
+    padding-bottom: 50px;
+}
+.eight {
+    padding-bottom: 50px;
+}
+
 
 h1,footer {
     font-family: 'Brush Script MT', 'Times New Roman', Times, serif;
