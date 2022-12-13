@@ -124,3 +124,29 @@ text-align: center;
 margin: 30px;
 }
 
+.chat {
+    display: flex;
+    margin-right: 30px;
+}
+
+.chat1 {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.profilebutton {
+    color: brown;
+    width: auto;
+}
+
+.settingsbutton {
+    color: brown;
+}
+
+.homebutton {
+    color: brown;
+}
+
+h3 {
+    text-align: center;
+}
