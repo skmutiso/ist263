@@ -13,6 +13,18 @@
     <link rel="shortcut icon" type="image/x-icon" href="../lab14/favicon_io/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
     <title>chat</title>
+    <script>
+    function getVote(int) {
+        var xmlhttp=new XMLHttpRequest();
+        xmlhttp.onreadystatechange=function() {
+          if (this.readyState==4 && this.status==200) {
+            document.getElementById("poll").innerHTML=this.responseText;
+          }
+        }
+        xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+        xmlhttp.send();
+      }
+      </script>
 </head>
 <body>
 <h1>Sammy's Sneaks</h1>
@@ -40,10 +52,19 @@
         <button type="button" class="profilebutton">Profile</button><br>
         <button type="button" class="settingsbutton">Settings</button><br>
         <button type="button" class="homebutton">Home</button><br>
-            
+        <div class="chat0">
+        <div class="chat-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <label for="msg"><b>Message</b></label>
+              <textarea placeholder="Type message.." name="msg" required></textarea>
+              <button type="submit" class="btn">Send</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+        </div>
     </div>
     <div class="chat1">
-        <img class="img" src="images/offwhitexnikedunkpinegreen.jpg" alt="Off white Nike Dunk Pine Green" width="600" height="450">
+        <img class="img" src="images/offwhitexnikedunkpinegreen.jpg" width="600" height="450" alt="Nike Off White x Pine Green Dunk">
     </div>
     <div class="chat2"> 
         <h4>Tommorow's Sneaker of the Day</h4>
@@ -55,9 +76,326 @@
         </form>
        
         <h5>Topic of the Day</h5>
+        <p>
+        <h6>What is more of an iconic sneaker, Jordan 1's or Jordan 11's?
+        </h6>
+        <div id="poll">
+        <form>
+        Yes: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
+        No: <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+</form>
     </div>
 </div>
+</div>
 
+   <footer>
+        <hr>
+        <p class="name">Samuel Mutiso 2022</p>
+        <p class="quote">"Sam was here, est 2022"</p>
+        <div class="clear"></div>
+    </footer>
+    <br>
+    <br>
+    <br>
+
+<h7>Shop</h7>
+<div class="photogrid">
+    <div class="one">
+        <p>Jordan 3 Cool Grey</p>
+        <img src="images/jordan3coolgrey.jpg" width="400" height="500" alt="Jordan 3 Cool Grey">
+        <form method="post" action=""><br>
+           <label>Select Used or New</label>
+           <select id="region" name="region">
+               <option></option>
+               <option value="New">New</option>
+               <option value="Used">Used</option>
+           </select>
+       </form>
+        <form method="post" action="jordan3"><br>
+           <label>Size</label>
+           <select id="region" name="region">
+               <option></option>
+               <option value="3">Size 3</option>
+               <option value="3.5">Size 3.5</option>
+               <option value="4">Size 4</option>
+               <option value="4.5">Size 4.5</option>
+               <option value="5">Size 5</option>
+               <option value="5.5">Size 5.5</option>
+               <option value="6">Size 6</option>
+               <option value="6.5">Size 6.5</option>
+               <option value="7">Size 7</option>
+               <option value="7.5">Size 7.5</option>
+               <option value="8">Size 8</option>
+               <option value="8.5">Size 8.5</option>
+               <option value="9">Size 9</option>
+               <option value="9.5">Size 9.5</option>
+               <option value="10">Size 10</option>
+               <option value="10.5">Size 10.5</option>
+               <option value="11">Size 11</option>
+               <option value="11.5">Size 11.5</option>
+               <option value="12">Size 12</option>
+               <option value="12.5">Size 12.5</option>
+               <option value="13">Size 13</option>
+               <option value="13.5">Size 13.5</option>
+               <option value="14">Size 14</option>
+           </select><input type="submit" value="submit">
+       </form>
+        <p class="three">$271.00 USD</p>
+    
+        <p>Off White x Nike Air Rubber Dunk</p>
+            <img src="images/offwhitexnikeairrubberdunk.jpg"width="400" height="500" alt="Off White x Nike Air Rubber Dunk">
+            <form method="post" action="rubberdunk"><br>
+               <label>Select Used or New</label>
+               <select id="region" name="region">
+                   <option></option>
+                   <option value="New">New</option>
+                   <option value="Used">Used</option>
+               </select>
+           </form>
+            <form method="post" action=""><br>
+               <label>Size</label>
+               <select id="region" name="region">
+                   <option></option>
+                   <option value="3">Size 3</option>
+                   <option value="3.5">Size 3.5</option>
+                   <option value="4">Size 4</option>
+                   <option value="4.5">Size 4.5</option>
+                   <option value="5">Size 5</option>
+                   <option value="5.5">Size 5.5</option>
+                   <option value="6">Size 6</option>
+                   <option value="6.5">Size 6.5</option>
+                   <option value="7">Size 7</option>
+                   <option value="7.5">Size 7.5</option>
+                   <option value="8">Size 8</option>
+                   <option value="8.5">Size 8.5</option>
+                   <option value="9">Size 9</option>
+                   <option value="9.5">Size 9.5</option>
+                   <option value="10">Size 10</option>
+                   <option value="10.5">Size 10.5</option>
+                   <option value="11">Size 11</option>
+                   <option value="11.5">Size 11.5</option>
+                   <option value="12">Size 12</option>
+                   <option value="12.5">Size 12.5</option>
+                   <option value="13">Size 13</option>
+                   <option value="13.5">Size 13.5</option>
+                   <option value="14">Size 14</option>
+               </select><input type="submit" value="submit">
+           </form>
+           <p class="four">$271.00 USD</p> 
+    
+    
+        <div class="three">
+            <p>Nike waffle sacai fragment</p>
+        <img src="images/nikewafflesacai.jpeg" width="400" height="400" alt="Nike waffle sacai fragment">
+        <form method="post" action="waffle"><br>
+           <label>Select Used or New</label>
+           <select id="region" name="region">
+               <option></option>
+               <option value="New">New</option>
+               <option value="Used">Used</option>
+           </select>
+       </form>
+        <form method="post" action=""><br>
+           <label>Size</label>
+           <select id="region" name="region">
+               <option></option>
+               <option value="3">Size 3</option>
+               <option value="3.5">Size 3.5</option>
+               <option value="4">Size 4</option>
+               <option value="4.5">Size 4.5</option>
+               <option value="5">Size 5</option>
+               <option value="5.5">Size 5.5</option>
+               <option value="6">Size 6</option>
+               <option value="6.5">Size 6.5</option>
+               <option value="7">Size 7</option>
+               <option value="7.5">Size 7.5</option>
+               <option value="8">Size 8</option>
+               <option value="8.5">Size 8.5</option>
+               <option value="9">Size 9</option>
+               <option value="9.5">Size 9.5</option>
+               <option value="10">Size 10</option>
+               <option value="10.5">Size 10.5</option>
+               <option value="11">Size 11</option>
+               <option value="11.5">Size 11.5</option>
+               <option value="12">Size 12</option>
+               <option value="12.5">Size 12.5</option>
+               <option value="13">Size 13</option>
+               <option value="13.5">Size 13.5</option>
+               <option value="14">Size 14</option>
+           </select><input type="submit" value="submit">
+       </form>
+       <p class="five">$271.00 USD</p>
+    
+      
+        <p>Nike dunk veneer</p>
+        <img src="images/nikedunkveneer.jpeg" width="400" height="400" alt="Nike dunk veneer">
+        <form method="post" action="veneer"><br>
+           <label>Select Used or New</label>
+           <select id="region" name="region">
+               <option></option>
+               <option value="New">New</option>
+               <option value="Used">Used</option>
+           </select>
+       </form>
+        <form method="post" action=""><br>
+           <label>Size</label>
+           <select id="region" name="region">
+               <option></option>
+               <option value="3">Size 3</option>
+               <option value="3.5">Size 3.5</option>
+               <option value="4">Size 4</option>
+               <option value="4.5">Size 4.5</option>
+               <option value="5">Size 5</option>
+               <option value="5.5">Size 5.5</option>
+               <option value="6">Size 6</option>
+               <option value="6.5">Size 6.5</option>
+               <option value="7">Size 7</option>
+               <option value="7.5">Size 7.5</option>
+               <option value="8">Size 8</option>
+               <option value="8.5">Size 8.5</option>
+               <option value="9">Size 9</option>
+               <option value="9.5">Size 9.5</option>
+               <option value="10">Size 10</option>
+               <option value="10.5">Size 10.5</option>
+               <option value="11">Size 11</option>
+               <option value="11.5">Size 11.5</option>
+               <option value="12">Size 12</option>
+               <option value="12.5">Size 12.5</option>
+               <option value="13">Size 13</option>
+               <option value="13.5">Size 13.5</option>
+               <option value="14">Size 14</option>
+           </select><input type="submit" value="submit">
+       </form>
+       <p class="six">$271.00 USD</p>
+    </div>
+    </div>
+    <div>
+        <p>Jordan 4 Lightning</p>
+        <img src="images/jordan4lightning.jpg" width="400" height="500" alt="Jordan 4 Lightning">
+        <form method="post" action="lightning"><br>
+           <label>Select Used or New</label>
+           <select id="region" name="region">
+               <option></option>
+               <option value="New">New</option>
+               <option value="Used">Used</option>
+           </select>
+       </form>
+        <form method="post" action=""><br>
+           <label>Size</label>
+           <select id="region" name="region">
+               <option></option>
+               <option value="3">Size 3</option>
+               <option value="3.5">Size 3.5</option>
+               <option value="4">Size 4</option>
+               <option value="4.5">Size 4.5</option>
+               <option value="5">Size 5</option>
+               <option value="5.5">Size 5.5</option>
+               <option value="6">Size 6</option>
+               <option value="6.5">Size 6.5</option>
+               <option value="7">Size 7</option>
+               <option value="7.5">Size 7.5</option>
+               <option value="8">Size 8</option>
+               <option value="8.5">Size 8.5</option>
+               <option value="9">Size 9</option>
+               <option value="9.5">Size 9.5</option>
+               <option value="10">Size 10</option>
+               <option value="10.5">Size 10.5</option>
+               <option value="11">Size 11</option>
+               <option value="11.5">Size 11.5</option>
+               <option value="12">Size 12</option>
+               <option value="12.5">Size 12.5</option>
+               <option value="13">Size 13</option>
+               <option value="13.5">Size 13.5</option>
+               <option value="14">Size 14</option>
+           </select><input type="submit" value="submit">
+       </form>
+       <p class="seven">$271.00 USD</p>
+    
+        <p>Yeezy Boost 380 mist</p>
+        <img src="images/yeezyboost380mist.jpg" width="400" height="400" alt="Yeezy Boost 380 Mist">
+        <form method="post" action="mist"><br>
+           <label>Select Used or New</label>
+           <select id="region" name="region">
+               <option></option>
+               <option value="New">New</option>
+               <option value="Used">Used</option>
+           </select>
+       </form>
+        <form method="post" action=""><br>
+           <label>Size</label>
+           <select id="region" name="region">
+               <option></option>
+               <option value="3">Size 3</option>
+               <option value="3.5">Size 3.5</option>
+               <option value="4">Size 4</option>
+               <option value="4.5">Size 4.5</option>
+               <option value="5">Size 5</option>
+               <option value="5.5">Size 5.5</option>
+               <option value="6">Size 6</option>
+               <option value="6.5">Size 6.5</option>
+               <option value="7">Size 7</option>
+               <option value="7.5">Size 7.5</option>
+               <option value="8">Size 8</option>
+               <option value="8.5">Size 8.5</option>
+               <option value="9">Size 9</option>
+               <option value="9.5">Size 9.5</option>
+               <option value="10">Size 10</option>
+               <option value="10.5">Size 10.5</option>
+               <option value="11">Size 11</option>
+               <option value="11.5">Size 11.5</option>
+               <option value="12">Size 12</option>
+               <option value="12.5">Size 12.5</option>
+               <option value="13">Size 13</option>
+               <option value="13.5">Size 13.5</option>
+               <option value="14">Size 14</option>
+           </select><input type="submit" value="submit">
+       </form>
+       <p class="eight">$271.00 USD</p>
+    
+        <p>Yeezy Boost 700 Mauve</p>
+        <img src="images/yeezyboost700mauve.jpeg" width="400" height="400" alt="Yeezy slide Flax">
+        <form method="post" action="mauve"><br>
+           <label>Select Used or New</label>
+           <select id="region" name="region">
+               <option></option>
+               <option value="New">New</option>
+               <option value="Used">Used</option>
+           </select>
+       </form>
+        <form method="post" action=""><br>
+           <label>Size</label>
+           <select id="region" name="region">
+               <option></option>
+               <option value="3">Size 3</option>
+               <option value="3.5">Size 3.5</option>
+               <option value="4">Size 4</option>
+               <option value="4.5">Size 4.5</option>
+               <option value="5">Size 5</option>
+               <option value="5.5">Size 5.5</option>
+               <option value="6">Size 6</option>
+               <option value="6.5">Size 6.5</option>
+               <option value="7">Size 7</option>
+               <option value="7.5">Size 7.5</option>
+               <option value="8">Size 8</option>
+               <option value="8.5">Size 8.5</option>
+               <option value="9">Size 9</option>
+               <option value="9.5">Size 9.5</option>
+               <option value="10">Size 10</option>
+               <option value="10.5">Size 10.5</option>
+               <option value="11">Size 11</option>
+               <option value="11.5">Size 11.5</option>
+               <option value="12">Size 12</option>
+               <option value="12.5">Size 12.5</option>
+               <option value="13">Size 13</option>
+               <option value="13.5">Size 13.5</option>
+               <option value="14">Size 14</option>
+           </select><input type="submit" value="submit">
+       </form>
+        <p>$253.00 USD</p>
+        </div>
+       </div>
+       </div>
+    </div>
  <footer>
     <hr>
     <p class="name">Samuel Mutiso 2022</p>

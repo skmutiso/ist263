@@ -135,18 +135,32 @@ margin: 30px;
 }
 
 .profilebutton {
-    color: brown;
+    color: black;
     width: auto;
 }
 
 .settingsbutton {
-    color: brown;
+    color: black;
 }
 
 .homebutton {
-    color: brown;
+    color: black;
 }
 
 h3 {
     text-align: center;
+}
+
+.chat0{
+    padding-left: 10px;
+    padding-top: 100%;
+    margin-top: 100%;
+}
+
+.chat {
+    padding-left: 10px;
+}
+
+h5{
+    padding-top: 300px;
 }
