@@ -30,7 +30,7 @@
 <h1>Sammy's Sneaks</h1>
 <nav>
    <a href="#content" id="skip">Skip to Content</a>
-   <a href="homepage.html">home</a>
+   <a href="index.html">home</a>
    <a href="shoppage.html">shop</a>
    <a href="chatpage.html">chat</a>
    <a href="account.html">account</a>
@@ -43,47 +43,46 @@
 
 </nav>
 <main id="content">
-    <h3>Sneaker of the Day</h3>
 
+<div class="chathere">
+<div class="snkr2">
+    <h2>Sneaker of the Day</h2>
+    <img class="img" src="images/jordan3coolgrey.jpg" width="500" height="350" alt="Nike Off White x Pine Green Dunk">
+</div>
 
+<div>
+    <div class="chatinfo">
+    <button type="button" class="profilebutton">Profile</button><br>
+    <button type="button" class="settingsbutton">Settings</button><br>
+    <button type="button" class="homebutton">Home</button><br>
+</div>
+    <h4>Tommorow's Sneaker of the Day</h4>
 
-<div class="chat">
-    <div>
-        <button type="button" class="profilebutton">Profile</button><br>
-        <button type="button" class="settingsbutton">Settings</button><br>
-        <button type="button" class="homebutton">Home</button><br>
-        <div class="chat0">
-        <div class="chat-popup" id="myForm">
-            <form action="/action_page.php" class="form-container">
-              <textarea placeholder="Type message.." name="msg" required></textarea>
-              <button type="submit" class="btn">Send</button>
-              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-            </form>
-          </div>
-        </div>
-    </div>
-    <div class="chat1">
-        <img class="img" src="images/offwhitexnikedunkpinegreen.jpg" width="600" height="450" alt="Nike Off White x Pine Green Dunk">
-    </div>
-    <div class="chat2"> 
-        <h4>Tommorow's Sneaker of the Day</h4>
+    <form method="post" action="chatanswer">
+    <label>Answer here:</label>
+    <input type="text" id="fullname" name="fullname"><br>
+    <input type="submit" value="submit">
+    </form>
 
-        <form method="post" action="chatanswer">
-        <label>Answer here:</label>
-        <input type="text" id="fullname" name="fullname"><br>
-        <input type="submit" value="submit">
-        </form>
-       
-        <h5>Topic of the Day</h5>
-        <p>
-        <h6>What is more of an iconic sneaker, Jordan 1's or Jordan 11's?
-        </h6>
-        <div id="poll">
-        <form>
-        Yes: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
-        No: <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+<div class="snkr3">
+    <h5>Topic of the Day</h5>
+    <p>
+    <h6>What is more of an iconic sneaker, Jordan 1's or Jordan 11's?
+    </h6>
+    <div id="poll">
+    <form>
+    Yes: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
+    No: <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
 </form>
+</div>
+    <div class="text">
+        <form action="/action_page.php" class="form-container">
+          <textarea placeholder="Type message.." name="msg" required></textarea>
+          <button type="submit" class="btn">Send</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form> 
     </div>
+</div>
 </div>
 </div>
 
