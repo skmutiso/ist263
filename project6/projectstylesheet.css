@@ -164,3 +164,11 @@ h3 {
 h5{
     padding-top: 200px;
 }
+
+h3, h4{
+    padding-right: 100%;
+}
+    
+.payment{
+    padding-top: 50px;
+}
