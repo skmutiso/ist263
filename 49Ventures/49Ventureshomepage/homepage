@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projectstylesheet.css">
+    <title>Home</title>
+</head>
+<body> 
+    <h1>49 ventures</h1>
+    <nav>
+        <a href="index.html">HumBol World</a>
+        <a href="shoppage.html">Pyour Media</a>
+        <a href="chatpage.html">Humbol World Records</a>
+        
+</select><input type="search">
+</nav>
+<main>
+    <header>Sneaker Of The Day<header>
+    <img class="img" src="images/offwhitexnikedunkpinegreen.jpg" width="600" height="450"></main>
+<p>Nike Dunk</p>
+ <footer>
+    <hr>
+    <p class="name">Samuel Mutiso 2022</p>
+    <p class="quote">"Sam was here, est 2022"</p>
+    <div class="clear"></div>
+</footer>
+</body>
+</html>
